@@ -1,0 +1,35 @@
+@import "tailwindcss";
+
+:root {
+  font-family: Inter, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
+  color: #161616;
+  background: #f6f5f2;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; }
+button, a { -webkit-tap-highlight-color: transparent; }
+a:focus-visible, button:focus-visible { outline: 3px solid #c7ff3d; outline-offset: 3px; }
+
+@layer components {
+  .eyebrow { @apply text-xs font-black tracking-[0.18em] text-black/55; }
+  .section-title { @apply text-[clamp(3rem,6.2vw,6.7rem)] font-black leading-[0.94] tracking-[-0.075em]; }
+  .join-link { @apply flex items-center justify-between gap-4 border-b border-black/35 py-4 text-base font-black transition hover:pl-2; }
+}
+
+.hero-grid {
+  background-image: linear-gradient(rgba(255,255,255,.11) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.11) 1px, transparent 1px);
+  background-size: clamp(46px, 5vw, 72px) clamp(46px, 5vw, 72px);
+  mask-image: linear-gradient(to bottom, black, rgba(0,0,0,.15));
+}
+.hero-orb { border-radius: 9999px; filter: blur(1px); }
+.hero-orb-one { width: 38rem; height: 38rem; right: -13rem; top: 4rem; background: radial-gradient(circle at 34% 36%, #c7ff3d 0 2%, #839f29 18%, rgba(131,159,41,.28) 42%, transparent 68%); opacity: .82; }
+.hero-orb-two { width: 26rem; height: 26rem; left: 37%; bottom: -15rem; background: radial-gradient(circle, rgba(61,90,254,.48), transparent 66%); }
+.event-pattern { background-image: radial-gradient(#c7ff3d 1.2px, transparent 1.2px), linear-gradient(135deg, rgba(199,255,61,.21), transparent 60%); background-size: 21px 21px, 100% 100%; }
+
+@media (max-width: 640px) {
+  .hero-orb-one { width: 24rem; height: 24rem; right: -10rem; top: 9rem; }
+}
