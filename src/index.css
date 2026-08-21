@@ -56,6 +56,9 @@ a:focus-visible, button:focus-visible { outline: 3px solid #0056c8; outline-offs
 }
 
 @media (max-width: 640px) {
+  section.scroll-scene:not(#top) { padding-top: 4rem; padding-bottom: 4rem; }
+  .section-title { font-size: clamp(2.25rem, 10.2vw, 2.9rem); line-height: 1.14; }
+  .join-link { padding-top: .875rem; padding-bottom: .875rem; }
   .story-stack { padding-bottom: 0; }
   .story-card { position: relative; top: auto; margin-bottom: 1rem; }
 }
