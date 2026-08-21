@@ -22,15 +22,20 @@ export type NewsItem = {
   title: string
 }
 
+export type CommunityRole = {
+  label: string
+  title: string
+  description: string
+}
+
 export const siteConfig = {
   name: 'ReLU Mates',
   tagline: 'つながる。学ぶ。挑戦する。',
   logoImage: '/relu-mates-logo.png',
   // TODO: 正式な問い合わせ先に差し替えてください。
   contactEmail: '',
-  // TODO: 公式SNSのURLを入力してください。未設定時はボタンが準備中表示になります。
   socials: {
-    instagram: '',
+    instagram: 'https://www.instagram.com/relu_mates/',
     x: '',
   },
 }
@@ -46,6 +51,24 @@ export const activityPillars = [
   { number: '01', name: 'KNOW', text: '地域の魅力や課題を知る' },
   { number: '02', name: 'CONNECT', text: '学生・住民・企業をつなぐ' },
   { number: '03', name: 'CREATE', text: '対話から新しい活動を生み出す' },
+]
+
+export const communityRoles: CommunityRole[] = [
+  {
+    label: 'STUDENTS',
+    title: '学生',
+    description: '地域に関わる第一歩を見つけたい人。学年や経験に関係なく参加できます。',
+  },
+  {
+    label: 'LOCAL',
+    title: '地域のみなさん',
+    description: '会津の魅力や課題を、学生と一緒に考えたい人を歓迎します。',
+  },
+  {
+    label: 'PARTNERS',
+    title: '企業・団体',
+    description: '学生と新しい取り組みを始めたい方からのご相談をお待ちしています。',
+  },
 ]
 
 export const activities: Activity[] = [
@@ -77,12 +100,12 @@ export const activities: Activity[] = [
 
 // TODO: 初回イベントの名称・日時・場所・申込URLが決まり次第、ここを更新してください。
 export const featuredEvent: Event = {
-  title: 'ReLU Mates Kickoff Session',
-  date: '開催日を準備中',
+  title: '次のイベントを準備中',
+  date: '最新情報はInstagramでお知らせします',
   venue: '会津若松市内／会津大学周辺',
-  description: '会津と福島のこれからを、学生と地域で考える最初の対話イベントです。',
-  status: '詳細は近日公開',
-  url: '',
+  description: '会津と福島のこれからを、学生と地域で考える対話の場をつくります。',
+  status: 'FOLLOW @RELU_MATES',
+  url: siteConfig.socials.instagram,
 }
 
 // TODO: 開催済みイベントができたら、ここへ追加してください。

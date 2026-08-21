@@ -1,11 +1,13 @@
 import { Activities } from './components/Activities'
 import { About } from './components/About'
+import { Community } from './components/Community'
 import { Events } from './components/Events'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { Join } from './components/Join'
 import { News } from './components/News'
+import { PillarStory } from './components/PillarStory'
 import { ScrollScenes } from './components/ScrollScenes'
 
 export default function App() {
@@ -16,7 +18,9 @@ export default function App() {
       <main>
         <Hero />
         <About />
+        <PillarStory />
         <Activities />
+        <Community />
         <Events />
         <News />
         <Join />

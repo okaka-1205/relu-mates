@@ -1,6 +1,6 @@
 import { List, X } from '@phosphor-icons/react'
 import { useState } from 'react'
-import { navLinks, siteConfig } from '../data/content'
+import { navLinks } from '../data/content'
 
 export function Header() {
   const [open, setOpen] = useState(false)
@@ -10,7 +10,8 @@ export function Header() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-[#001d50]/10 bg-white/95 text-[#001d50] backdrop-blur-md">
       <div className="mx-auto flex h-20 max-w-[1440px] items-center justify-between px-5 sm:px-8 lg:px-12">
         <a className="flex items-center gap-3 font-black tracking-[-0.06em]" href="#top" onClick={closeMenu} aria-label="ReLU Mates トップへ">
-          {siteConfig.logoImage ? <img className="h-14 w-14 rounded-full object-contain" src={siteConfig.logoImage} alt="ReLU Mates" /> : <><span className="grid h-9 w-9 place-items-center border border-[#0056c8] text-[11px] text-[#0056c8]">R</span><span className="text-xl">ReLU<br className="sm:hidden" /> Mates</span></>}
+          <span className="grid h-11 w-11 place-items-center rounded-full bg-[#001d50] text-base tracking-[-0.11em] text-white">R1</span>
+          <span className="leading-none"><span className="block text-xl">ReLU Mates</span><span className="mt-1 block text-[9px] font-bold tracking-[0.12em] text-[#0056c8]">CONNECT · LEARN · CHALLENGE</span></span>
         </a>
         <nav className="hidden items-center gap-8 text-sm font-bold lg:flex" aria-label="メインナビゲーション">
           {navLinks.map((link) => <a className="transition hover:text-[#0056c8]" href={link.href} key={link.href}>{link.label}</a>)}
