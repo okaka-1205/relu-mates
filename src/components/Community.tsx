@@ -6,7 +6,7 @@ export function Community() {
     <section id="community" className="scroll-scene scroll-mt-20 bg-[#f6f8fc] py-24 sm:py-32">
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
-          <div><p className="eyebrow">参加・連携について</p><h2 className="section-title mt-5">会津で何かを<br />始めたい人へ。</h2></div>
+          <div><p className="eyebrow">参加・連携について</p><h2 className="mt-5 text-[clamp(2.2rem,9.5vw,5.8rem)] font-black leading-[1.12] tracking-[-0.04em]"><span className="whitespace-nowrap">会津で何かを</span><br /><span className="whitespace-nowrap">始めたい人へ。</span></h2></div>
           <div><p className="max-w-2xl text-lg leading-9 text-[#23477b] sm:text-xl">ReLU Matesは、誰かがつくった場所に参加するだけのコミュニティではありません。会津で何かを始めたい人が、仲間を見つけ、学び、試せる場所です。</p><a className="mt-10 inline-flex items-center gap-3 rounded-full bg-[#0056c8] px-6 py-4 text-sm font-black text-white transition hover:bg-[#001d50]" href={siteConfig.socials.instagram} target="_blank" rel="noreferrer"><InstagramLogo size={20} weight="bold" />Instagramでつながる <ArrowUpRight size={18} weight="bold" /></a></div>
         </div>
 

@@ -22,7 +22,7 @@ export function PillarStory() {
   return (
     <section className="scroll-scene bg-white py-20 sm:py-28">
       <div className="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12">
-        <div className="mb-12 max-w-2xl"><p className="eyebrow">ReLU Matesが大切にすること</p><h2 className="mt-5 text-[clamp(2.4rem,5vw,5rem)] font-black leading-[1.15] tracking-[-0.04em]">知って、つながって、<br />一歩ずつ動かす。</h2></div>
+        <div className="mb-12 max-w-2xl"><p className="eyebrow">ReLU Matesが大切にすること</p><h2 className="mt-5 text-[clamp(2.1rem,9vw,5rem)] font-black leading-[1.15] tracking-[-0.04em]"><span className="whitespace-nowrap">知って、</span><br /><span className="whitespace-nowrap">つながって、</span><br /><span className="whitespace-nowrap">一歩ずつ動かす。</span></h2></div>
         <div className="story-stack">
           {stories.map((story, index) => {
             const pillar = activityPillars[index]
