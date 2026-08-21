@@ -22,12 +22,10 @@ export type NewsItem = {
   title: string
 }
 
-// TODO: ロゴ画像を使用する場合は `public/logo.svg` などに配置し、logoImage にパスを設定してください。
-// 例: logoImage: '/logo.svg'
 export const siteConfig = {
   name: 'ReLU Mates',
-  tagline: '情報を武器に、会津から福島を活性化する。',
-  logoImage: '',
+  tagline: 'つながる。学ぶ。挑戦する。',
+  logoImage: '/relu-mates-logo.png',
   // TODO: 正式な問い合わせ先に差し替えてください。
   contactEmail: '',
   // TODO: 公式SNSのURLを入力してください。未設定時はボタンが準備中表示になります。

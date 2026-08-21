@@ -6,11 +6,13 @@ import { Header } from './components/Header'
 import { Hero } from './components/Hero'
 import { Join } from './components/Join'
 import { News } from './components/News'
+import { ScrollScenes } from './components/ScrollScenes'
 
 export default function App() {
   return (
-    <div className="overflow-x-clip bg-[#f6f5f2] text-[#161616]">
+    <div className="motion-enabled overflow-x-clip bg-[#f6f8fc] text-[#001d50]">
       <Header />
+      <ScrollScenes />
       <main>
         <Hero />
         <About />
