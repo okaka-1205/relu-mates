@@ -11,7 +11,7 @@ export function Hero() {
         <div className="text-xs font-bold tracking-[0.08em] text-[#0056c8]">会津大学の学生コミュニティ</div>
         <div className="my-auto py-10 sm:py-16 lg:py-20">
           <div className="mb-6 flex items-center gap-3 sm:mb-8 sm:gap-4"><img className="h-16 w-16 rounded-full bg-white object-contain p-1 shadow-sm sm:h-24 sm:w-24" src={siteConfig.logoImage} alt="ReLU Mates ロゴ" /><p className="text-xs font-bold leading-5 text-[#23477b] sm:text-sm sm:leading-6">つながる。学ぶ。挑戦する。</p></div>
-          <p className="mb-6 max-w-2xl text-sm leading-7 text-[#23477b] sm:text-base">ReLU Matesは、<br />会津大学の学生が運営するコミュニティです。学生、<br />地域、<br />企業が出会い、<br />会津・福島で新しい挑戦を生み出します。</p>
+          <p className="mb-6 max-w-2xl text-sm leading-7 text-[#23477b] sm:text-base">ReLU Matesは、会津大学の学生が運営するコミュニティです。<br />学生、地域、企業が出会い、<br />会津・福島で新しい挑戦を生み出します。</p>
           <h1 className="max-w-5xl text-[clamp(2.45rem,11.5vw,3.5rem)] font-black leading-[1.08] tracking-[-0.045em] sm:text-[clamp(3rem,8vw,7.5rem)] sm:leading-[1.05]">会津の学生が、<br /><span className="text-[#0056c8]">福島の未来を</span><br />動かしていく。</h1>
           <div className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:flex-wrap"><a className="group inline-flex items-center justify-center gap-3 rounded-full bg-[#0056c8] px-6 py-4 text-sm font-black text-white transition hover:bg-[#001d50]" href="#events">イベントを見る <ArrowRight size={17} weight="bold" className="transition group-hover:translate-x-1" /></a><a className="inline-flex items-center justify-center gap-3 rounded-full border border-[#001d50]/35 px-6 py-4 text-sm font-black text-[#001d50] transition hover:border-[#001d50] hover:bg-white" href="#about">ReLU Matesについて <ArrowDownRight size={17} weight="bold" /></a></div>
         </div>
