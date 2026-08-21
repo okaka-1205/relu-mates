@@ -1,3 +1,5 @@
+import logoImage from '../../img.png'
+
 export type LinkItem = { label: string; href: string }
 
 export type Activity = {
@@ -31,7 +33,7 @@ export type CommunityRole = {
 export const siteConfig = {
   name: 'ReLU Mates',
   tagline: 'つながる。学ぶ。挑戦する。',
-  logoImage: '/relu-mates-logo.png',
+  logoImage,
   // TODO: 正式な問い合わせ先に差し替えてください。
   contactEmail: '',
   socials: {
