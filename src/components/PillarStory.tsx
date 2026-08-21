@@ -29,7 +29,7 @@ export function PillarStory() {
             return (
               <article className={`story-card ${story.color}`} key={pillar.number}>
                 <div className="grid min-h-[54svh] gap-10 p-7 sm:p-12 lg:grid-cols-[0.55fr_1.45fr] lg:items-end lg:p-16">
-                  <p className="font-mono text-sm opacity-60">{pillar.number}</p>
+                  <p className="font-mono text-[clamp(3.25rem,7vw,7rem)] font-black leading-none tracking-[-0.09em] opacity-45">{pillar.number}</p>
                   <div><p className="text-sm font-bold opacity-70">{pillar.name}</p><h3 className="mt-4 text-[clamp(2.8rem,6vw,6.5rem)] font-black leading-[1.04] tracking-[-0.05em]">{story.title}</h3><p className="mt-7 max-w-xl text-base leading-8 opacity-80 sm:text-lg">{story.description}</p></div>
                 </div>
               </article>
