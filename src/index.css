@@ -38,16 +38,21 @@ a:focus-visible, button:focus-visible { outline: 3px solid #0056c8; outline-offs
 
 .motion-enabled .scroll-scene:not(.is-visible) {
   opacity: 0;
-  transform: translateY(44px) scale(.985);
+  transform: translateY(18px);
 }
 
 .motion-enabled .scroll-scene {
-  transition: opacity .75s ease, transform .75s cubic-bezier(.2,.8,.2,1);
+  transition: opacity .55s ease, transform .55s cubic-bezier(.2,.8,.2,1);
 }
 
 .motion-enabled .scroll-scene.is-visible {
   opacity: 1;
-  transform: translateY(0) scale(1);
+  transform: translateY(0);
+}
+
+@media (hover: hover) {
+  .story-card { transition: transform .3s ease, box-shadow .3s ease; }
+  .story-card:hover { transform: translateY(-4px); box-shadow: 0 24px 58px rgba(0, 29, 80, .2); }
 }
 
 @media (prefers-reduced-motion: reduce) {
