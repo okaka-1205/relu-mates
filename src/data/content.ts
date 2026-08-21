@@ -48,9 +48,9 @@ export const navLinks: LinkItem[] = [
 ]
 
 export const activityPillars = [
-  { number: '01', name: 'KNOW', text: '地域の魅力や課題を知る' },
-  { number: '02', name: 'CONNECT', text: '学生・住民・企業をつなぐ' },
-  { number: '03', name: 'CREATE', text: '対話から新しい活動を生み出す' },
+  { number: '01', name: '知る', text: '会津の魅力や課題に目を向ける' },
+  { number: '02', name: 'つながる', text: '学生・住民・企業が出会う' },
+  { number: '03', name: '挑戦する', text: '対話から次の行動を生み出す' },
 ]
 
 export const communityRoles: CommunityRole[] = [

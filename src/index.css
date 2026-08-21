@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-  font-family: Inter, "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Yu Gothic", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
   color: #001d50;
   background: #f6f8fc;
   font-synthesis: none;
@@ -15,8 +15,8 @@ button, a { -webkit-tap-highlight-color: transparent; }
 a:focus-visible, button:focus-visible { outline: 3px solid #0056c8; outline-offset: 3px; }
 
 @layer components {
-  .eyebrow { @apply text-xs font-black tracking-[0.18em] text-[#23477b]; }
-  .section-title { @apply text-[clamp(3rem,6.2vw,6.7rem)] font-black leading-[0.94] tracking-[-0.075em]; }
+  .eyebrow { @apply text-sm font-bold tracking-[0.04em] text-[#23477b]; }
+  .section-title { @apply text-[clamp(2.6rem,5.2vw,5.8rem)] font-black leading-[1.12] tracking-[-0.04em]; }
   .join-link { @apply flex items-center justify-between gap-4 border-b border-[#001d50]/35 py-4 text-base font-black transition hover:pl-2; }
 }
 
@@ -29,6 +29,12 @@ a:focus-visible, button:focus-visible { outline: 3px solid #0056c8; outline-offs
 
 .hero-bar { background: linear-gradient(90deg, #eaf5ff 0 50%, #0056c8 50%); }
 .event-panel { background: linear-gradient(135deg, transparent 0 48%, rgba(255,255,255,.14) 48% 51%, transparent 51%); }
+
+.story-stack { padding-bottom: 16vh; }
+.story-card { position: sticky; top: 5.5rem; margin-bottom: 10vh; overflow: hidden; box-shadow: 0 18px 50px rgba(0, 29, 80, .16); }
+.story-card:nth-child(1) { z-index: 1; }
+.story-card:nth-child(2) { z-index: 2; }
+.story-card:nth-child(3) { z-index: 3; }
 
 .motion-enabled .scroll-scene:not(.is-visible) {
   opacity: 0;
@@ -47,4 +53,9 @@ a:focus-visible, button:focus-visible { outline: 3px solid #0056c8; outline-offs
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
   .motion-enabled .scroll-scene:not(.is-visible) { opacity: 1; transform: none; }
+}
+
+@media (max-width: 640px) {
+  .story-stack { padding-bottom: 0; }
+  .story-card { position: relative; top: auto; margin-bottom: 1rem; }
 }
